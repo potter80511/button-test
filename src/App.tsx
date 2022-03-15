@@ -19,13 +19,14 @@ export class AppPath {
 }
 
 const App = () => {
+
   return (
     <Provider store={store}>
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header">
           <Link to="/">index</Link>
           <Link to="/test_feature">test feature</Link>
-        </header>
+        </header> */}
         <Switch>
           <Route exact={true} path={AppPath.index} component={IndexContainer} />
           <Route
