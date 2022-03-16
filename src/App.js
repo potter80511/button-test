@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Button, ButtonGroup } from '@mui/material';
+import './App.css';
 
-const IndexContainer = () => {
+function App() {
   const [clickNum, setClickNum] = useState(0);
   const [clickDisabled, setClickDisabled] = useState(false);
 
@@ -14,6 +15,6 @@ const IndexContainer = () => {
       <Button variant="outlined" onClick={() => setClickDisabled(!clickDisabled)}>{disableText}</Button>
     </ButtonGroup>
   </div>
-};
+}
 
-export default IndexContainer;
+export default App;
